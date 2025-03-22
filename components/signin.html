@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Signin</title>
+</head>
+<body>
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <a href="#" class="navbar-brand">
+                  <img src="../bootstrap-logo.svg"    alt="Logo"
+                  class="d-inline-block align-text-top"
+                  width="40"
+                  height="30">
+                  BootStrap
+                </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./About.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Topic
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Technology</a></li>
+                      <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#"> Support</a></li>
+                      <li><a class="dropdown-item" href="#"> help</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item  ">
+                    <a class="nav-link " href="./Contect.html">Conect Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex mb-1" role="search">
+                  <button class="btn btn-outline-success me-2" type="submit">
+                    Search
+                  </button>
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </form >
+                <div class="btn btn-outline-primary btn-sm mx-3">
+                  <a href="./login.html" style="text-decoration: none; color: #fff">
+                    Login</a
+                  >
+                </div>
+                <div class="btn btn-primary  btn-sm  " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <a href="./signin.html" style="text-decoration: none; color: #fff;"> SignUp</a>
+              </div>
+              </div>
+            </div>
+          </nav>
+      
+ <!-- signup  -->
+    <div class="container">
+        <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> -->
+            <div class="modal-dialog modal-dialog-centered model  " tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false" data-bs-backdrop="static" >
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                    <div class="container">
+                                           <img class="mb-4" src="../bootstrap-logo.svg" alt="" width="72" height="57">
+                    <h1 class="h3   mx-3" id="exampleModalToggleLabel">SignUp</h1> 
+                    </div>
+                    <button type="button flot-left" class="btn-close"></button>
+
+                  <!-- <h1 class="modal-title fs-5" id="exampleModalToggleLabel">SignIn</h1> -->
+                </div>
+
+                <form  class=" text-center border p-2" >
+                
+                    <div class="form-floating my-2">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating my-2">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="form-floating my-2">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
+                      <label for="floatingPassword">Confirm Password</label>
+                    </div>
+                
+                    <div class="form-check text-start my-3">
+                      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                      </label>
+                    </div>
+                    <button class="btn btn-primary w-100 py-2" type="submit">SignUp</button>
+                  </form>
+         
+                <div class="modal-footer">
+                  <button class="btn btn-primary  " data-bs-dismiss="modal" aria-label="Close ">cancel</button>
+                  <div class="btn btn-primary  " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                    <a href="./login.html" style="text-decoration: none; color: #fff;"> Login</a>
+                </div>
+                  <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Login</button> -->
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
