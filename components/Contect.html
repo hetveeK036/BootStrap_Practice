@@ -1,0 +1,360 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Conect</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <a href="#" class="navbar-brand">
+            <img src="../bootstrap-logo.svg"    alt="Logo"
+            class="d-inline-block align-text-top"
+            width="40"
+            height="30">
+            BootStrap
+          </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topic
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#"> Support</a></li>
+                <li><a class="dropdown-item" href="#"> help</a></li>
+              </ul>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="./Contect.html">Conect Us</a>
+            </li>
+          </ul>
+          <form class="d-flex mb-1" role="search">
+            <button class="btn btn-outline-success me-2" type="submit">
+              Search
+            </button>
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form >
+          <div class="btn btn-outline-primary btn-sm mx-3">
+            <a href="./login.html" style="text-decoration: none; color: #fff">
+              Login</a
+            >
+          </div>
+          <div class="btn btn-primary  btn-sm  " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+            <a href="./signin.html" style="text-decoration: none; color: #fff;"> SignUp</a>
+        </div>
+        </div>
+
+        
+      </div>
+    </nav>
+<div class="container d-flex gap-5 column-gap-3" style="margin-top: 75px;">
+      <!-- blog  -->
+
+        <div class="col-md-7 col-lg-8 align-items-center" >
+            <h3 class="mb-3 fs-3 text-primary">Form</h3>
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                  <div class="invalid-feedback">
+                    Please enter your address.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Choose...</option>
+                    <option>Delhi</option>
+                    <option>Gujrat</option>
+                    <option>Mp</option>
+                    <option>Rajsthan</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>new Delhi</option>
+                    <option>Ahemdabad</option>
+                    <option>Mumbai</option>
+                    <option>Jaipur</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">All information is correct.</label>
+              </div>
+    
+
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+            </form>
+          </div>
+ 
+
+    <!-- sidebar  -->
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style="width: 380px;">
+      <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+        <!-- <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg> -->
+        <img src="../bootstrap-logo.svg" alt="brand-logo" width="40" height="30" class="d-block me-2" role="img">
+        <span>
+
+          <h3 class="fs-4 ">List Group</h3>
+        </span>
+      </a>
+
+      <div class="list-group list-group-flush border-bottom  scrollarea-y-auto overflow-auto"  style="height: 60vh;">
+        <a href="#" class="list-group-item list-group-item-action active py-3 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small>Wed</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+  
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Wed</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Wed</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Wed</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">List group item heading</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+        </a>
+      </div>
+    </div>
+</div>
+
+
+          <!-- footer  -->
+          <footer class="bd-footer py-5 mt-5 bg-light">
+            <div class="container py-5">
+              <div class="row">
+                <div class="col-lg-3 mb-3">
+                  <a class="d-inline-flex align-items-center my-4 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                    <img src="../bootstrap-logo.svg" alt="brand-logo" width="50" height="40" class="d-block me-2" role="img">
+                    <span class="fs-5"><h3>Bootstrap</h1></span>
+                  </a>
+                  <ul class="list-unstyled small text-muted">
+                    <li class="mb-2">Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                  <h5>Links</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">Home </li>
+                     <li class="mb-2">Docs</li>
+                    <li class="mb-2">    Example  </li>
+                    <li class="mb-2">Themes</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5>Guides</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">          Getting  Started       </li>
+                    <li class="mb-2">  Starter template</li>
+                    <li class="mb-2">Webpack</li>
+                    <li class="mb-2"> Percel</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5>Projects</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"> Icons
+                   </li>
+                    <li class="mb-2">Bootstrap 4</li>
+                    <li class="mb-2">Bootstrap 5
+                     </li>
+    
+                    <li class="mb-2">npm starter</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5>Community</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      Issues</li>
+                    <li class="mb-2">
+                  Discussions</li>
+                    <li class="mb-2">
+                      sponsors</li>
+          
+                    <li class="mb-2">
+                      Stack Overflow</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
