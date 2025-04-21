@@ -1,253 +1,307 @@
 <!-- <!DOCTYPE html> -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Aboutus</title>
-  </head>
-  <body>
-    <!-- navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <a href="#" class="navbar-brand">
-            <img src="../bootstrap-logo.svg"    alt="Logo"
-            class="d-inline-block align-text-top"
-            width="40"
-            height="30">
-            BootStrap
-          </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link " href="./About.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Topic
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Technology</a></li>
-                <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#"> Support</a></li>
-                <li><a class="dropdown-item" href="#"> help</a></li>
-              </ul>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link " href="./Contect.html">Conect Us</a>
-            </li>
-          </ul>
-          <form class="d-flex mb-1" role="search">
-            <button class="btn btn-outline-success me-2" type="submit">
-              Search
-            </button>
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form >
-          <div class="btn btn-outline-primary btn-sm mx-3">
-            <a href="./login.html" style="text-decoration: none; color: #fff">
-              Login</a
-            >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="../asset/css/bootstrap.min.css"> -->
+  <title>Aboutus</title>
+</head>
+
+<body>
+  <!-- navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark bg-dark" style="background: darkgrey;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        <img src="../asset/image/bootstrap-logo.svg" alt="Logo" class="d-inline-block align-text-top" width="40"
+          height="30">
+        BootStrap
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="./About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topic
+            </a>
+            <ul class="dropdown-menu mt-2">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#"> Support</a></li>
+              <li><a class="dropdown-item" href="#"> help</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="./Contect.html">Conect Us</a>
+          </li>
+        </ul>
+        <form class="d-flex mb-1" role="search">
+          <button class="btn btn-outline-success me-2" type="submit">
+            Search
+          </button>
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+        </form>
+        <div class="btn ">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-login"
+            data-bs-whatever="@getbootstrap">login</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal-signin">signup</button>
+        </div>
+      </div>
+
+
+    </div>
+  </nav>
+  <div class="login">
+    <div class="modal fade" id="exampleModal-login" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class=" modal-header text-center">
+            <div class="login-page">
+              <img class="mb-4" src="../asset/image/bootstrap-logo.svg" alt="" width="72" height="57">
+              <h1 class="h3   mx-3" id="exampleModalToggleLabel">SignIn</h1>
+            </div>
+            <button type="button flot-left" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
           </div>
-          <div class="btn btn-primary  btn-sm  " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
-            <a href="./signin.html" style="text-decoration: none; color: #fff;"> SignUp</a>
-        </div>
-        </div>
 
-        
-      </div>
-    </nav>
+          <form class=" text-center border p-2">
 
-    <!-- blog  -->
-    <div class="container-sm  " style="margin-top: 75px;">
-      <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7 aling-center ">
-          <h2 class="featurette-heading fw-normal lh-1">
-            First featurette heading.
-            <span class="text-body-secondary">It’ll blow your mind.</span>
-          </h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img
-            src="../image/ab1.jpg"
-            class="img-fluid"
-            alt=""
-            style="width: 400px; height: 300px"
-          />
-        </div>
-      </div>
-      <hr class="featurette-divider" />
-      <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Oh yeah, it’s that good.
-            <span class="text-body-secondary">See for yourself.</span>
-          </h2>
-          <p class="lead">
-            Another featurette? Of course. More placeholder content here to give
-            you an idea of how this layout would work with some actual
-            real-world content in place.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1" >
-          <img
-            src="../image/ab2.jpg"
-            class="img-fluid"
+            <div class="form-floating my-2">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating my-2">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
 
-            alt=""
-            style="width: 400px; height: 300px"
-          />
-        </div>
-      </div>
-      <hr class="featurette-divider" />
+            <div class="form-check text-start my-3">
+              <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit">LogIn</button>
+          </form>
 
-      <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7" >
-          <h2 class="featurette-heading fw-normal lh-1">
-            First featurette heading.
-            <span class="text-body-secondary">It’ll blow your mind.</span>
-          </h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img
-            src="../image/ab3.jpg"
-            class="img-fluid"
-
-            alt=""
-            style="width: 400px; height: 300px"
-          />
-        </div>
-      </div>
-      <hr class="featurette-divider" />
-      <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7 order-md-2" >
-          <h2 class="featurette-heading fw-normal lh-1">
-            Oh yeah, it’s that good.
-            <span class="text-body-secondary">See for yourself.</span>
-          </h2>
-          <p class="lead">
-            Another featurette? Of course. More placeholder content here to give
-            you an idea of how this layout would work with some actual
-            real-world content in place.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1 mx-auto">
-          <img
-            src="../image/ab4.jpg"
-            class="img-fluid"
-
-            alt=""
-            style="width: 400px; height: 300px"
-          />
+          <div class="modal-footer">
+            <button class="btn btn-primary  " data-bs-dismiss="modal" aria-label="Close">cancel</button>
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal-signup">signup</button> -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-signin"
+              data-bs-whatever="@fat">sign up</button>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-          <!-- footer  -->
-          <footer class="bd-footer py-5 mt-5 bg-light">
-            <div class="container py-5">
-              <div class="row">
-                <div class="col-lg-3 mb-3">
-                  <a class="d-inline-flex align-items-center my-4 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-                    <img src="../bootstrap-logo.svg" alt="brand-logo" width="50" height="40" class="d-block me-2" role="img">
-                    <span class="fs-5"><h3>Bootstrap</h1></span>
-                  </a>
-                  <ul class="list-unstyled small text-muted">
-                    <li class="mb-2">Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</li>
-                  </ul>
-                </div>
-                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                  <h5>Links</h5>
-                  <ul class="list-unstyled">
-                    <li class="mb-2">Home </li>
-                     <li class="mb-2">Docs</li>
-                    <li class="mb-2">    Example  </li>
-                    <li class="mb-2">Themes</li>
-                  </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                  <h5>Guides</h5>
-                  <ul class="list-unstyled">
-                    <li class="mb-2">          Getting  Started       </li>
-                    <li class="mb-2">  Starter template</li>
-                    <li class="mb-2">Webpack</li>
-                    <li class="mb-2"> Percel</li>
-                  </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                  <h5>Projects</h5>
-                  <ul class="list-unstyled">
-                    <li class="mb-2"> Icons
-                   </li>
-                    <li class="mb-2">Bootstrap 4</li>
-                    <li class="mb-2">Bootstrap 5
-                     </li>
-    
-                    <li class="mb-2">npm starter</li>
-                  </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                  <h5>Community</h5>
-                  <ul class="list-unstyled">
-                    <li class="mb-2">
-                      Issues</li>
-                    <li class="mb-2">
-                  Discussions</li>
-                    <li class="mb-2">
-                      sponsors</li>
-          
-                    <li class="mb-2">
-                      Stack Overflow</li>
-                  </ul>
-                </div>
-              </div>
+  <div class="signup">
+    <div class="modal fade" id="exampleModal-signin" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <div class="container">
+              <img class="mb-4" src="../asset/image/bootstrap-logo.svg" alt="" width="72" height="57">
+              <h1 class="h3   mx-3" id="exampleModalToggleLabel">SignUp</h1>
             </div>
-          </footer>
+            <button type="button flot-left" class="btn-close"></button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-  </body>
+          </div>
+
+          <form class=" text-center border p-2">
+
+            <div class="form-floating my-2">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating my-2">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating my-2">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
+              <label for="floatingPassword">Confirm Password</label>
+            </div>
+
+            <div class="form-check text-start my-3">
+              <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit">SignUp</button>
+          </form>
+
+          <div class="modal-footer">
+            <button class="btn btn-primary  " data-bs-dismiss="modal" aria-label="Close ">cancel</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-login"
+              data-bs-whatever="@fat">sign in</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- blog  -->
+  <div class="container-sm  " style="margin-top: 75px;">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 aling-center ">
+        <h2 class="featurette-heading fw-normal lh-1">
+          First featurette heading.
+          <span class="text-body-secondary">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">
+          Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="../asset/image/ab1.jpg" class="img-fluid" alt="" style="width: 400px; height: 300px" />
+      </div>
+    </div>
+    <hr class="featurette-divider" />
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">
+          Oh yeah, it’s that good.
+          <span class="text-body-secondary">See for yourself.</span>
+        </h2>
+        <p class="lead">
+          Another featurette? Of course. More placeholder content here to give
+          you an idea of how this layout would work with some actual
+          real-world content in place.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../asset/image/ab2.jpg" class="img-fluid" alt="" style="width: 400px; height: 300px" />
+      </div>
+    </div>
+    <hr class="featurette-divider" />
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">
+          First featurette heading.
+          <span class="text-body-secondary">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">
+          Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="../asset/image/ab3.jpg" class="img-fluid" alt="" style="width: 400px; height: 300px" />
+      </div>
+    </div>
+    <hr class="featurette-divider" />
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">
+          Oh yeah, it’s that good.
+          <span class="text-body-secondary">See for yourself.</span>
+        </h2>
+        <p class="lead">
+          Another featurette? Of course. More placeholder content here to give
+          you an idea of how this layout would work with some actual
+          real-world content in place.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1 mx-auto">
+        <img src="../asset/image/ab4.jpg" class="img-fluid" alt="" style="width: 400px; height: 300px" />
+      </div>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <footer class="bd-footer py-5 mt-5 bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center my-4 link-dark text-decoration-none" href="/"
+            aria-label="Bootstrap">
+            <img src="../asset/image/bootstrap-logo.svg" alt="brand-logo" width="50" height="40" class="d-block me-2"
+              role="img">
+            <span class="fs-5">
+              <h3>Bootstrap</h1>
+            </span>
+          </a>
+          <ul class="list-unstyled small text-muted">
+            <li class="mb-2">Designed and built with all the love in the world by the Bootstrap team with the help of
+              our contributors.</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">Home </li>
+            <li class="mb-2">Docs</li>
+            <li class="mb-2"> Example </li>
+            <li class="mb-2">Themes</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Guides</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"> Getting Started </li>
+            <li class="mb-2"> Starter template</li>
+            <li class="mb-2">Webpack</li>
+            <li class="mb-2"> Percel</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Projects</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"> Icons
+            </li>
+            <li class="mb-2">Bootstrap 4</li>
+            <li class="mb-2">Bootstrap 5
+            </li>
+
+            <li class="mb-2">npm starter</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Community</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              Issues</li>
+            <li class="mb-2">
+              Discussions</li>
+            <li class="mb-2">
+              sponsors</li>
+
+            <li class="mb-2">
+              Stack Overflow</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
 </html>
